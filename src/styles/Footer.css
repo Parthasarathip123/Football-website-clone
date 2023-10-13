@@ -1,0 +1,82 @@
+/* Footer.css */
+
+.footer {
+  background-color:white;
+  height: 200px;
+  width: 100%;
+  color: #333;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding: 0.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: slideInFromLeft 1s ease-in-out; /* Add slideInFromLeft animation */
+  color: black;
+}
+
+.header h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase !important;
+  color: black !important;
+  margin-right: 20px;
+  margin-left: 5%;
+}
+
+.header p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-left: 50px;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out; /* Add fadeIn animation */
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links a {
+  color: #333;
+  font-weight: 900;
+  font-size: 1rem;
+  margin: 0.2rem 0;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.links a:hover {
+  color: #3498db;
+}
+
+/* Keyframes for animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
